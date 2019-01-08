@@ -12,7 +12,7 @@ class UserEditModal extends Component {
     };
   }
 
-  showModelHandler = (e) => {
+  showModalHandler = (e) => {
     if (e) e.stopPropagation();
     this.setState({
       visible: true,
@@ -46,7 +46,7 @@ class UserEditModal extends Component {
 
     return (
       <span>
-        <span onClick={this.showModelHandler}>
+        <span onClick={this.showModalHandler}>
           { children }
         </span>
         <Modal
